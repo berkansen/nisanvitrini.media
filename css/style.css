@@ -503,6 +503,7 @@ header {
     opacity: 1;
     filter: grayscale(0%);
 }
+
 .navbar .btn-primary {
     background: transparent;
     border: 1px solid var(--primary-color);
@@ -515,7 +516,8 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Adjust based on header height 80px */
+    height: 140px;
+    /* Adjust based on header height 80px */
     width: auto;
     vertical-align: middle;
 }

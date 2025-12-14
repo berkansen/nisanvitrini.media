@@ -490,3 +490,16 @@ header {
         min-height: 300px;
     }
 }
+
+.client-logo-img {
+    max-height: 80px;
+    width: auto;
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.client-logo-img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}

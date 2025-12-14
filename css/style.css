@@ -503,3 +503,13 @@ header {
     opacity: 1;
     filter: grayscale(0%);
 }
+.navbar .btn-primary {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.navbar .btn-primary:hover {
+    background: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+}

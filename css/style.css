@@ -7,9 +7,9 @@
     --primary-color: #7b2cbf;
     /* Deep Purple */
     --secondary-color: #e0aaff;
-    --accent-color: #ff006e;
+    --accent-color: #ef781a;
     /* Vibrant Pink/Red */
-    --gradient-main: linear-gradient(135deg, #7b2cbf 0%, #ff006e 100%);
+    --gradient-main: linear-gradient(135deg, #7b2cbf 0%, #ef781a 100%);
     --gradient-text: linear-gradient(90deg, #e0aaff, #ff9e00);
 
     --font-heading: 'Outfit', sans-serif;
@@ -191,7 +191,7 @@ header {
     position: relative;
     padding-top: var(--header-height);
     background: radial-gradient(circle at 80% 20%, rgba(123, 44, 191, 0.15), transparent 40%),
-        radial-gradient(circle at 10% 80%, rgba(255, 0, 110, 0.1), transparent 40%);
+        radial-gradient(circle at 10% 80%, rgba(239, 120, 26, 0.1), transparent 40%);
 }
 
 .hero-title {
@@ -521,6 +521,7 @@ header {
     width: auto;
     vertical-align: middle;
 }
+
 .contact-card a {
     color: var(--text-muted);
     transition: var(--transition);

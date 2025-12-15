@@ -4,12 +4,12 @@
     --card-bg: #121212;
     --text-main: #e0e0e0;
     --text-muted: #a0a0a0;
-    --primary-color: #7b2cbf;
+    --primary-color: #ef781a;
     /* Deep Purple */
     --secondary-color: #e0aaff;
     --accent-color: #ef781a;
     /* Vibrant Pink/Red */
-    --gradient-main: linear-gradient(135deg, #7b2cbf 0%, #ef781a 100%);
+    --gradient-main: linear-gradient(135deg, #ef781a 0%, #ef781a 100%);
     --gradient-text: linear-gradient(90deg, #e0aaff, #ff9e00);
 
     --font-heading: 'Outfit', sans-serif;
@@ -106,12 +106,12 @@ img {
 .btn-primary {
     background: var(--gradient-main);
     color: #fff;
-    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+    box-shadow: 0 4px 15px rgba(239, 120, 26, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(123, 44, 191, 0.6);
+    box-shadow: 0 8px 25px rgba(239, 120, 26, 0.6);
 }
 
 .btn-outline {
@@ -190,7 +190,7 @@ header {
     align-items: center;
     position: relative;
     padding-top: var(--header-height);
-    background: radial-gradient(circle at 80% 20%, rgba(123, 44, 191, 0.15), transparent 40%),
+    background: radial-gradient(circle at 80% 20%, rgba(239, 120, 26, 0.15), transparent 40%),
         radial-gradient(circle at 10% 80%, rgba(239, 120, 26, 0.1), transparent 40%);
 }
 
@@ -512,7 +512,7 @@ header {
 
 .navbar .btn-primary:hover {
     background: var(--primary-color);
-    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
+    box-shadow: 0 4px 15px rgba(239, 120, 26, 0.4);
 }
 
 .logo img {

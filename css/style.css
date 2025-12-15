@@ -411,6 +411,10 @@ header {
         flex-direction: column;
     }
 
+    .visual-card::before {
+        display: none;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -538,7 +542,9 @@ header {
 
 .footer-contact li a:hover {
     color: var(--accent-color);
-}/* Social Links */
+}
+
+/* Social Links */
 .social-links {
     display: flex;
     gap: 1rem;

@@ -521,3 +521,20 @@ header {
     width: auto;
     vertical-align: middle;
 }
+.contact-card a {
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.contact-card a:hover {
+    color: var(--accent-color);
+}
+
+.footer-contact li a {
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.footer-contact li a:hover {
+    color: var(--accent-color);
+}

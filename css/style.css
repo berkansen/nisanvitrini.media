@@ -684,8 +684,8 @@ header {
 /* Reels Grid */
 .reels-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* Narrower columns for vertical video */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Video/Embed friendly width */
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -695,21 +695,30 @@ header {
     overflow: hidden;
     position: relative;
     transition: var(--transition);
-    cursor: pointer;
+    /* Remove scaling on hover that might break iframe interactions or look weird with white bg */
 }
 
 .reel-card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
 .reel-wrapper {
     width: 100%;
-    aspect-ratio: 9/16;
-    /* Vertical Video */
+    height: 600px;
+    /* Fixed height for uniformity */
     background: #1a1a1a;
     position: relative;
+    overflow: hidden;
+    /* Hide excess length of embeds */
+}
+
+/* Ensure Instagram embed fits */
+.reel-wrapper iframe {
+    min-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 .play-button {

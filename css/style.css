@@ -323,10 +323,21 @@ header {
 .marquee-content {
     display: flex;
     gap: 4rem;
-    min-width: 100%;
-    justify-content: space-around;
+    width: max-content;
+    /* Allow content to dictate width */
+    justify-content: flex-start;
+    /* Align items to start */
     animation: scroll 20s linear infinite;
+    /* Increased duration for smoother scroll */
 }
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+/* Add padding-right using gap logic or ensure JS duplication handles it. 
+   With gap: 4rem, we need to ensure the space between the last item of set 1 
+   and first item of set 2 is correct. Flex gap handles this if they are siblings. */
 
 .client-logo {
     font-weight: 700;
@@ -341,7 +352,8 @@ header {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+        /* Move only half the width (one set of logos) */
     }
 }
 

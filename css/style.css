@@ -322,22 +322,29 @@ header {
 
 .marquee-content {
     display: flex;
-    gap: 4rem;
-    width: max-content;
-    /* Allow content to dictate width */
-    justify-content: flex-start;
-    /* Align items to start */
-    animation: scroll 20s linear infinite;
-    /* Increased duration for smoother scroll */
+    overflow: hidden;
+    user-select: none;
+    width: 100%;
+    /* No animation on the container itself */
 }
 
-.marquee-content:hover {
+.marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    min-width: 100%;
+    padding-right: 4rem;
+    /* Match gap for seamless loop */
+    animation: scroll 30s linear infinite;
+}
+
+.marquee-content:hover .marquee-group {
     animation-play-state: paused;
 }
 
-/* Add padding-right using gap logic or ensure JS duplication handles it. 
-   With gap: 4rem, we need to ensure the space between the last item of set 1 
-   and first item of set 2 is correct. Flex gap handles this if they are siblings. */
+/* Remove old padding note */
 
 .client-logo {
     font-weight: 700;
@@ -352,8 +359,8 @@ header {
     }
 
     to {
-        transform: translateX(-50%);
-        /* Move only half the width (one set of logos) */
+        transform: translateX(-100%);
+        /* Move the entire group width */
     }
 }
 

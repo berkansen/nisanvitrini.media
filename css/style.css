@@ -405,6 +405,40 @@ header {
     color: var(--text-muted);
 }
 
+/* Parent Brand Section in Footer */
+.footer-parent-brand {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-parent-text {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.footer-parent-text a {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.footer-parent-text a:hover {
+    text-decoration: underline;
+}
+
+.footer-parent-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.footer-parent-brand .social-links {
+    justify-content: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-toggle {

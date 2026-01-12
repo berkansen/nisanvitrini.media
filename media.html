@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Nisan Vitrini Media</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- Hidden from search engines -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .media-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            /* Bit larger for logo */
+            height: auto;
+            max-height: 100px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .profile-bio {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: -0.5rem;
+        }
+
+        .links-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.1);
+        }
+
+        .link-btn i {
+            font-size: 1.5rem;
+            position: absolute;
+            left: 1.5rem;
+        }
+
+        /* Specific Colors */
+        .btn-instagram {
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-location {
+            background-color: var(--primary-color);
+        }
+
+        .footer-minimal {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+
+        .qr-section {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+        }
+
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="media-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="assets/nisanvitrini-logo.png" alt="Nisan Vitrini Media" class="profile-img">
+            <h1 class="profile-name">Nisan Vitrini Media</h1>
+            <p class="profile-bio">Yeni nesil medya çözümleri.</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-section">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/nisanvitrinimedia" target="_blank" class="link-btn btn-instagram">
+                <i class='bx bxl-instagram'></i>
+                Instagram
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/905526288131" target="_blank" class="link-btn btn-whatsapp">
+                <i class='bx bxl-whatsapp'></i>
+                WhatsApp
+            </a>
+
+            <!-- Location -->
+            <a href="https://maps.google.com/?q=38.465427430609836,27.200037516244787" target="_blank"
+                class="link-btn btn-location">
+                <i class='bx bx-map'></i>
+                Konumumuz
+            </a>
+        </div>
+
+        <!-- Section QR Code -->
+        <div class="qr-section">
+            <img src="assets/qr-media.png" alt="QR Code" class="qr-code">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-minimal">
+            &copy; 2026 Nisan Vitrini Media
+        </footer>
+    </div>
+
+</body>
+
+</html>
